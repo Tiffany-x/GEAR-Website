@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Cinzel";
     src: 
-        url("/Fonts/Cinzel/Cinzel-Regular.otf");
+        url("Cinzel-Regular.otf");
 }
 
 @font-face {
     font-family: "Lora";
     src:
-        url("/Fonts/Lora/static/Lora-Regular.ttf");
+        url("Lora-Regular.ttf");
 }
 
 @font-face {
     font-family: "Quattrocento";
     src:
-        url("/Fonts/Quattrocento/Quattrocento-Regular.ttf");
+        url("Quattrocento-Regular.ttf");
 }
 
 p {

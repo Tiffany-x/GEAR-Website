@@ -67,11 +67,16 @@ nav {
 .nav-bar li {
     height: 60px;
     align-content: center;
+    justify-content: center;
 }
 
 .nav-butt {
     height: 60px;
     align-content: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
        
 }
 
@@ -107,6 +112,7 @@ border: 2px solid var(--links);
 
 .CTA:hover{
     background-color: white;
+    cursor: pointer;
     
 }
 .CTA:hover a {
@@ -151,6 +157,7 @@ border: 2px solid var(--links);
     background-color: white;
     color: var(--main);
     border-color: var(--main);
+    cursor: pointer;
 }
 
 
@@ -188,8 +195,8 @@ border: 2px solid var(--links);
 }
 
 #hero-deets {
-    width: 598.75px;
-    height: 143px;
+    max-width: 598.75px;
+    min-width: 400px;
     font-family: "Lora";
     font-size: 30px;
 
@@ -207,12 +214,15 @@ border: 2px solid var(--links);
     width: calc(100vw - 230px);
 
     list-style-type: none;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
 
     padding-top: 50px;
     padding-bottom: 50px;
+
     justify-content: center;
+    align-content: center;
 }
 
 
@@ -224,19 +234,19 @@ border: 2px solid var(--links);
     margin: 0px;
     font-weight: 300;
     align-self: center;
-    width: auto;
+    width: fit-content;
 }
 hr {
     border-top: 1px;
     border-color: var(--links);
-    width: inherit;
+    width: calc(100vw - 230px);
     margin: 0px;
+    justify-self: center;
 }
 #recent-pubs {
-    display: grid;
-    width: inherit;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     align-content: center;
     gap: 19px;
 }
@@ -259,6 +269,7 @@ hr {
     cursor: pointer;
     color: var(--links);
     text-decoration: underline;
+    cursor: pointer;
 }
 .rec-deets {
     height: 224px;
@@ -266,7 +277,8 @@ hr {
     justify-content: space-between;
 }
 .rec-intro {
-    width: 693px;
+    min-width: 350px;
+    max-width: 800px;
     font-family: "Lora";
     font-size: 22px;
     margin:0px;
@@ -288,30 +300,34 @@ hr {
 }
 
 #vision {
-    
-width: inherit;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, rgba(18, 54, 121, 0.50) 100%), url("books.jpg") lightgray 50% / cover no-repeat;
-}
-
-#vision-deets {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 291px 394px; 
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; 
-
     padding-left: 115px;
     padding-right: 115px;
     padding-top: 20px;
     padding-bottom: 20px;
+width: inherit;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, rgba(18, 54, 121, 0.50) 100%), url("books.jpg") lightgray 50% / cover no-repeat;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vision-deets {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    margin: 0px;
+    justify-content: center;
 }
 
 #vision-deets li {
-    width: auto;
+    margin: 5px;
+    max-width: 800px;
+    min-width: 400px;
 }
 
 .vis-details {
-    height: 251px;
 display: inline-flex;
 flex-direction: column;
 align-items: start;
@@ -322,18 +338,18 @@ gap: 10px;
  padding-right: 12px;
  padding-top: 30px;
  padding-bottom: 10px;
+    grid-row: span 2;
 
 }
 
 .vis-image {
-    width: 565px;
-    height: 394px;
+    grid-row: span 3;
+    background-size: inherit;
+    /* width: 565px;
+    height: 394px; */
 
 }
-.vis-image img{
-    width: 565px;
-    height: 394px;
-}
+
 
 
 .text {
@@ -345,14 +361,17 @@ gap: 10px;
 
 #newsletter {
     background-color: var(--main);
-    height: fit-content;
-    width: auto;
     padding-left: 115px;
     padding-right: 115px;
     padding-top: 90px;
     padding-bottom: 90px;
     display: flex;
+    justify-content: start;
+}
+#newsletter-info {
+    display: flex;
     flex-direction: column;
+    min-width: 600px;
     gap: 40px;
 }
  
@@ -360,27 +379,30 @@ form {
     display: flex;
 }
 .email {
-    width: 952px;
+    width: 70vw;
 }
 
 #pillars {
     width: auto;
+
     padding-left: 115px;
     padding-right: 115px;
     padding-bottom: 36px;
 }
 
 .pillar {
-    width:auto;
-    height: 200px;
+    min-width: 1000px;
+display: grid;
 align-content: center;
 }
 
 .pill-info {
     z-index: 2;
-    display: grid;
+    display: flex;
+    width: calc(100vw - 290px);
     height: 164px;
-    grid-template-columns: 1fr 650px;
+    min-width: 940px;
+    gap: 10px;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
@@ -390,10 +412,12 @@ align-content: center;
 
 .pill-info h1 {
     grid-column: 1; grid-row: 1;
+    min-width: 400px;
+    max-width: 500px;
 }
 .pill-info p {
     grid-column: 2; grid-row: 1;
-    width: 650px;
+    min-width: 500px;
 }
 .pill-bg {
     z-index: 1; 
@@ -401,7 +425,9 @@ align-content: center;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-content: space-between;
-    width: calc(100vw * .83);
+    width: calc(100vw - 230px);
+    min-width: 1000px;
+
     height: 200px;
     position: absolute;
 }
@@ -462,6 +488,7 @@ align-content: center;
 
 .link-butt a:hover {
     color: var(--links);
+    cursor: pointer;
 }
 
 .link-butt a {
@@ -472,7 +499,7 @@ align-content: center;
 }
 
 body {
-    width: 100%;
+
     margin: 0px;
     display: flex;
     flex-direction: column;

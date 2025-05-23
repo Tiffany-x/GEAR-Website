@@ -7,12 +7,169 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>GEAR Media</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <meta name="description" content="A leading nexus for research, knowledge production and engagement on Africa's place in the world.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body style="background-color: var(--off-bg);">
+        <div id="media-bg">
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <div class="logo">
+                            <img src="GEAR_white_logo.png" href="index.html" height="89" width="216"/>
+                        </div>    
+                    </li>
+                    <li>
+                    <ul class = "menus">
+                        <li>
+                            <ul class="nav-bar">
+                                <li>
+                                    <div class="nav-butt-blue">
+                                    <a href="index.html">home</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">publications</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="events.html">events</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="media.html" style="color: var(--links);">media</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="experts.html">our experts</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="CTA">
+                                        <a>join us!</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="nav-bar">
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">culture & arts</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">stem</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">diplomacy & politics</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">economics & trade</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">environment</a>
+                                    </div>
+                                </li>                        
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                </ul>        
+                </nav>
+                <div id="about-events">
+                    <h1 class="titles" style="color: white;">media</h1>
+                    <div class="vr" style="width: 4px; height: 200px;"></div>
+                    <div id="ab-event">
+                        <p class="text" style="color: white; font-size: 24px; font-family: 'Quattrocentro';">Browse our collection of videos that break down complex research topics and help readers improve their understanding of policy issues.</p>
+                    </div>
+                </div>
+        </div>
+        <div class="filters">
+            <div class="selected" style="border-bottom: 1px solid var(--main); justify-content: space-between;">
+                    <input type="text" class="text-search" placeholder="Text Search">
+                <div class="fils">
+                    <div class="dropdown-reg">
+                        <button onclick="openDropdown()" class="filter-box">
+                            <h1 class="filter-texts">topic</h1>
+                            <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.755957 0.654621 -0.630864 0.775893 0.603271 2)" stroke="#F27457" stroke-width="2"/>
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.755957 0.654621 0.630864 0.775893 30.624 2)" stroke="#F27457" stroke-width="2"/>
+                              </svg>
+                            </button>
+                            
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-reg">
+                        <button onclick="openDropdown()" class="filter-box">
+                            <h1 class="filter-texts">region</h1>
+                            <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.755957 0.654621 -0.630864 0.775893 0.603271 2)" stroke="#F27457" stroke-width="2"/>
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.755957 0.654621 0.630864 0.775893 30.624 2)" stroke="#F27457" stroke-width="2"/>
+                              </svg>
+                            </button>
+                            <div class="dropdowns" id="region-dropdown">
+                                <input type="text" placeholder="Search topics" id="topic-search" onkeyup="filterFunction()">
+    
+                                <button class="region" data filter="centralafrica">Central Africa</button>
+                                <button class="region" data filter="easternafrica">Eastern Africa</button>
+                                <button class="region" data filter="northafrica">North Africa</button>
+                                <button class="region" data filter="southernafrica">Southern Africa</button>
+                                <button class="region" data filter="centralafrica">West Africa</button>
+                            </div>
+                    </div>
+                    
+                    <div class="dropdown-reg">
+                        <button onclick="openDropdown()" class="filter-box">
+                            <h1 class="filter-texts">author</h1>
+                            <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.755957 0.654621 -0.630864 0.775893 0.603271 2)" stroke="#F27457" stroke-width="2"/>
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.755957 0.654621 0.630864 0.775893 30.624 2)" stroke="#F27457" stroke-width="2"/>
+                              </svg>
+                            </button>
+                    </div>
+                    <div class="dropdowns" id="author-dropdown"></div>
+                </div>
+            </div>
+            <hr style="border-color: black; z-index: inherit;">
+            <div class="selected">
+                <div class="box">
+                    <h1 id="selected-no" class="filter-texts">2</h1><h1 class="filter-texts" style="padding-left: 5px;">selected:</h1>
+                </div>
+                <div class="filter-box">
+                    <h1 class="filter-texts">stem</h1>
+                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(0.754188 0.656659 -0.628793 0.777572 0.832275 1.57214)" stroke="#F27457" stroke-width="2"/>
+                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(-0.754188 0.656659 0.628793 0.777572 16.168 1.57214)" stroke="#F27457" stroke-width="2"/>
+                      </svg>
+                </div>
+                <div class="filter-box">
+                    <h1 class="filter-texts">east africa</h1>
+                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(0.754188 0.656659 -0.628793 0.777572 0.832275 1.57214)" stroke="#F27457" stroke-width="2"/>
+                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(-0.754188 0.656659 0.628793 0.777572 16.168 1.57214)" stroke="#F27457" stroke-width="2"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+        
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

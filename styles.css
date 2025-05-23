@@ -246,7 +246,7 @@ border: 2px solid var(--links);
 hr {
     border-top: 1px;
     border-color: var(--links);
-    width: calc(100vw - 230px);
+    width: inherit;
     margin: 0px;
     justify-self: center;
 }
@@ -362,7 +362,7 @@ gap: 10px;
 .text {
 
     font-family: "Lora";
-    font-size: 22px;
+    font-size: 20px;
     margin:0px;
 }
 
@@ -528,6 +528,7 @@ div {
     align-items: center;
     margin: 0px 115px 0px 115px;
     justify-content: space-between;
+    justify-content: center;
     display: flex;
     height: inherit;
 }
@@ -569,11 +570,23 @@ font-size: 20px;
 
 .box {
     width: 180px;
-    padding: 20px 0px 20px 20px; /* Simplified padding */
+    padding: 20px 0px 20px 20px; 
     display: flex;
     gap: 0px;
     align-items: center;
     position: relative;
+}
+
+.text-search {
+    font-family: "Lora";
+    font-size: 20px;
+    color: black;
+    height: 65px;
+    margin: 0px;
+
+    font-weight: 300;
+    align-self: center;
+    width: fit-content;
 }
 
 .filter-texts {
@@ -586,14 +599,69 @@ font-size: 20px;
     align-self: center;
     width: fit-content;
 }
+
+#topic-search {
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 20px 0px 20px 10px;
+    border:none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+width: inherit;
+}
+
+#topic-search:focus {
+    outline: 3px solid #ddd;
+}
+
+.dropdown-reg {
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdowns {
+    display: none; 
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    width: inherit;
+}
 .filter-box {
+    background-color: white;
+    border: none;
     width: 180px;
-    padding: 20px 0px 20px 20px;
+    margin: 19px 0px 19px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative; 
 }
+
+.region {
+    background-color: white;
+
+    border: none;
+    width: 180px;
+align-items: center;
+    display: flex;
+    height: 50px;
+    font-family: 'Lora';
+ font-size: 20px;
+ width: inherit;
+}
+.region:hover {
+    background-color: var(--main);
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
 
 .filter-box h1 {
     position: relative;
@@ -638,49 +706,30 @@ font-size: 20px;
     justify-content: space-between;
     position: relative;
 }
-/* Container */
+
 .publication:hover {
     cursor: pointer;
   }
- /* Container */
-.publication:hover {
+
+
+#pub-title {
+    
+    /* Underline animation setup */
+    background-image: linear-gradient(var(--links), var(--links));
+    background-size: 0% 2px; /* Width:0, Height:2px */
+    background-repeat: no-repeat;
+    background-position: 100% 100%; /* Start from right */
+    
+    /* Animation */
+    transition: background-size 0.8s ease;
+  }
+  
+  .publication:hover #pub-title {
     cursor: pointer;
+    background-size: 100% 2px; /* Full width on hover */
+    background-position: 0% 100%; /* Animate to left */
   }
-  
-  .publication .pub-dets .titles {
-    position: relative;
-    display: inline-block;
-    color: var(--main);
-    background: linear-gradient(to right, var(--links) 50%, var(--main) 50%);
-    background-size: 200% 100%;
-    background-position: right;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    transition: background-position 0.4s ease-out;
-  }
-  
-  /* Underline animation */
-  .publication .pub-dets .titles::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--links);
-    transition: width 0.3s ease-out;
-  }
-  
-  /* Hover states */
-  .publication:hover .pub-dets .titles {
-    background-position: left;
-  }
-  
-  .publication:hover .pub-dets .titles::after {
-    width: 100%;
-  }
-  
+
 .pub-dets {
     display: flex;  
     flex-direction: column;
@@ -695,6 +744,8 @@ font-size: 20px;
     height: 135px;
     background: url(story.jpg) lightgray 50% / cover no-repeat;
 }
+
+
 
 #event-bg {
     height: 630px;
@@ -717,3 +768,67 @@ font-size: 20px;
     max-width: 600px;
     min-width: 500px;
 }
+.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.events-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 115px 0 115px;
+}
+.event-list {
+    display: flex;
+    gap: 20px;
+    height: auto;
+    flex-wrap: wrap;
+}
+.an-event {
+    display: grid;
+    gap: 0px;
+    width: 550px;
+    position: relative;
+}
+.event-date {
+    grid-column: 1;
+    height: 182px;
+    width: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-dets {
+    grid-column: 2;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+#event-name {
+    
+    /* Underline animation setup */
+    background-image: linear-gradient(var(--links), var(--links));
+    background-size: 0% 2px; /* Width:0, Height:2px */
+    background-repeat: no-repeat;
+    background-position: 100% 100%; /* Start from right */
+    
+    /* Animation */
+    transition: background-size 0.8s ease;
+  }
+  
+  .an-event:hover #event-name{
+    cursor: pointer;
+    background-size: 100% 2px; /* Full width on hover */
+    background-position: 0% 100%; /* Animate to left */
+  }
+
+  #media-bg {
+    height: 400px;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(media.jpg) lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+  }

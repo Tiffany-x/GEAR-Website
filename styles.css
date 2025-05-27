@@ -581,17 +581,17 @@ font-size: 20px;
     font-family: "Lora";
     font-size: 20px;
     color: black;
-    height: 65px;
+    height: inherit;
     margin: 0px;
-
+    border: .5px solid #000;
     font-weight: 300;
     align-self: center;
-    width: fit-content;
+    padding: 0px;
 }
 
 .filter-texts {
     font-family: "Cinzel";
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     height: min-content;
     margin: 0px;
@@ -619,6 +619,7 @@ width: inherit;
     height: auto;
     position: relative;
     display: inline-block;
+    background-color: white;
 }
 
 .dropdowns {
@@ -634,7 +635,7 @@ width: inherit;
     background-color: white;
     border: none;
     width: 180px;
-    margin: 19px 0px 19px 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -831,4 +832,76 @@ align-items: center;
     background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(media.jpg) lightgray 50% / cover no-repeat;
     display: flex;
     flex-direction: column;
+  }
+
+  .media-selected {
+    height: 70px;
+    width: -moz-available;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: 20px;
+  }
+
+  #media-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 115px 100px 115px;
+    gap: 20px;
+  }
+  .a-media {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 400px;
+  }
+
+  .media-name{
+    height: 150px;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  
+    #med-name{
+
+     /* Underline animation setup */
+    background-image: linear-gradient(var(--links), var(--links));
+    background-size: 0% 2px; /* Width:0, Height:2px */
+    background-repeat: no-repeat;
+    background-position: 100% 100%; /* Start from right */
+    
+    /* Animation */
+    transition: background-size 0.8s ease;
+    }
+    
+  .a-media:hover #med-name {
+    cursor: pointer;
+    background-size: 100% 2px; /* Full width on hover */
+    background-position: 0% 100%; /* Animate to left */
+  }
+
+  .a-media:hover {
+    cursor: pointer;
+  }
+
+  .thumbnail {
+    display: grid;
+    width: inherit;
+    height: 250px;
+    background: url(vid-thumbnail.jpg);
+    align-content: end;
+  }
+  .med-type {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+width: 60px;
+height: 60px;
+justify-content: center;
+align-items: center;
+aspect-ratio: 1/1;
+background-color: var(--links);
+z-index: 2;
   }

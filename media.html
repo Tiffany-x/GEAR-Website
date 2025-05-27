@@ -100,10 +100,9 @@
                 </div>
         </div>
         <div class="filters">
-            <div class="selected" style="border-bottom: 1px solid var(--main); justify-content: space-between;">
-                    <input type="text" class="text-search" placeholder="Text Search">
-                <div class="fils">
-                    <div class="dropdown-reg">
+            <div class="media-selected">
+                    <input type="text" class="text-search" style="grid-column: span 2;" placeholder="  Text Search">
+                    <div class="dropdown-reg" style="border: 0.2px solid #000;">
                         <button onclick="openDropdown()" class="filter-box">
                             <h1 class="filter-texts">topic</h1>
                             <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,13 +110,9 @@
                                 <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.755957 0.654621 0.630864 0.775893 30.624 2)" stroke="#F27457" stroke-width="2"/>
                               </svg>
                             </button>
-                            
                     </div>
-                    
-                    
-                    
-                    
-                    <div class="dropdown-reg">
+
+                    <div class="dropdown-reg" style="border: 0.2px solid #000;">
                         <button onclick="openDropdown()" class="filter-box">
                             <h1 class="filter-texts">region</h1>
                             <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +131,7 @@
                             </div>
                     </div>
                     
-                    <div class="dropdown-reg">
+                    <div class="dropdown-reg" style="border: 0.2px solid #000;">
                         <button onclick="openDropdown()" class="filter-box">
                             <h1 class="filter-texts">author</h1>
                             <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,30 +140,105 @@
                               </svg>
                             </button>
                     </div>
-                    <div class="dropdowns" id="author-dropdown"></div>
+                    <input type="submit" value="search" class="CTA-orange">
                 </div>
             </div>
-            <hr style="border-color: black; z-index: inherit;">
-            <div class="selected">
-                <div class="box">
-                    <h1 id="selected-no" class="filter-texts">2</h1><h1 class="filter-texts" style="padding-left: 5px;">selected:</h1>
+        <div id="media-layout">
+            <div class="a-media">
+                <div class="thumbnail" >
+                
+                <div class="med-type">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="var(--links)" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19.6011 43.2935V17.4185C19.6011 16.7101 19.8511 16.116 20.3511 15.636C20.8511 15.156 21.4344 14.9168 22.1011 14.9185C22.3094 14.9185 22.5286 14.9493 22.7586 15.011C22.9886 15.0726 23.2069 15.1668 23.4136 15.2935L43.7886 28.231C44.1636 28.481 44.4452 28.7935 44.6336 29.1685C44.8219 29.5435 44.9152 29.9393 44.9136 30.356C44.9119 30.7726 44.8186 31.1685 44.6336 31.5435C44.4486 31.9185 44.1669 32.231 43.7886 32.481L23.4136 45.4185C23.2052 45.5435 22.9869 45.6376 22.7586 45.701C22.5302 45.7643 22.3111 45.7951 22.1011 45.7935C21.4344 45.7935 20.8511 45.5535 20.3511 45.0735C19.8511 44.5935 19.6011 44.0001 19.6011 43.2935Z" fill="white"/>
+</svg></div></div>
+                <div class="media-name">
+                    <h1 class="titles" style="font-size: 28px; color: #000;">
+                        <span id="med-name">futures of critical minerals in southern africa</span> </h1>
                 </div>
-                <div class="filter-box">
-                    <h1 class="filter-texts">stem</h1>
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(0.754188 0.656659 -0.628793 0.777572 0.832275 1.57214)" stroke="#F27457" stroke-width="2"/>
-                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(-0.754188 0.656659 0.628793 0.777572 16.168 1.57214)" stroke="#F27457" stroke-width="2"/>
-                      </svg>
+            </div>
+            <div class="a-media">
+                <div class="thumbnail" >
+                
+                <div class="med-type">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M35.1963 52.2097V47.0847C38.9463 46.0013 41.9671 43.918 44.2588 40.8347C46.5505 37.7513 47.6963 34.2513 47.6963 30.3347C47.6963 26.418 46.5505 22.918 44.2588 19.8347C41.9671 16.7513 38.9463 14.668 35.1963 13.5847V8.45966C40.363 9.62632 44.5713 12.2413 47.8213 16.3047C51.0713 20.368 52.6963 25.0447 52.6963 30.3347C52.6963 35.6247 51.0713 40.3022 47.8213 44.3672C44.5713 48.4322 40.363 51.0463 35.1963 52.2097ZM7.69629 37.8972V22.8972H17.6963L30.1963 10.3972V50.3972L17.6963 37.8972H7.69629ZM35.1963 40.3972V20.2722C37.1546 21.1888 38.6863 22.5638 39.7913 24.3972C40.8963 26.2305 41.448 28.2305 41.4463 30.3972C41.4463 32.5222 40.8938 34.4913 39.7888 36.3047C38.6838 38.118 37.153 39.4822 35.1963 40.3972ZM25.1963 22.5222L19.8213 27.8972H12.6963V32.8972H19.8213L25.1963 38.2722V22.5222Z" fill="white"/>
+</svg></div></div>
+                <div class="media-name">
+                    <h1 class="titles" style="font-size: 28px; color: #000;">
+                        <span id="med-name">futures of critical minerals in southern africa</span> </h1>
                 </div>
-                <div class="filter-box">
-                    <h1 class="filter-texts">east africa</h1>
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(0.754188 0.656659 -0.628793 0.777572 0.832275 1.57214)" stroke="#F27457" stroke-width="2"/>
-                        <line y1="-1" x2="19.5775" y2="-1" transform="matrix(-0.754188 0.656659 0.628793 0.777572 16.168 1.57214)" stroke="#F27457" stroke-width="2"/>
-                      </svg>
+            </div>
+            <div class="a-media">
+                <div class="thumbnail" >
+                
+                <div class="med-type">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="var(--links)" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19.6011 43.2935V17.4185C19.6011 16.7101 19.8511 16.116 20.3511 15.636C20.8511 15.156 21.4344 14.9168 22.1011 14.9185C22.3094 14.9185 22.5286 14.9493 22.7586 15.011C22.9886 15.0726 23.2069 15.1668 23.4136 15.2935L43.7886 28.231C44.1636 28.481 44.4452 28.7935 44.6336 29.1685C44.8219 29.5435 44.9152 29.9393 44.9136 30.356C44.9119 30.7726 44.8186 31.1685 44.6336 31.5435C44.4486 31.9185 44.1669 32.231 43.7886 32.481L23.4136 45.4185C23.2052 45.5435 22.9869 45.6376 22.7586 45.701C22.5302 45.7643 22.3111 45.7951 22.1011 45.7935C21.4344 45.7935 20.8511 45.5535 20.3511 45.0735C19.8511 44.5935 19.6011 44.0001 19.6011 43.2935Z" fill="white"/>
+</svg></div></div>
+                <div class="media-name">
+                    <h1 class="titles" style="font-size: 28px; color: #000;">
+                        <span id="med-name">futures of critical minerals in southern africa</span> </h1>
+                </div>
+            </div>
+            <div class="a-media">
+                <div class="thumbnail" >
+                
+                <div class="med-type">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="var(--links)" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19.6011 43.2935V17.4185C19.6011 16.7101 19.8511 16.116 20.3511 15.636C20.8511 15.156 21.4344 14.9168 22.1011 14.9185C22.3094 14.9185 22.5286 14.9493 22.7586 15.011C22.9886 15.0726 23.2069 15.1668 23.4136 15.2935L43.7886 28.231C44.1636 28.481 44.4452 28.7935 44.6336 29.1685C44.8219 29.5435 44.9152 29.9393 44.9136 30.356C44.9119 30.7726 44.8186 31.1685 44.6336 31.5435C44.4486 31.9185 44.1669 32.231 43.7886 32.481L23.4136 45.4185C23.2052 45.5435 22.9869 45.6376 22.7586 45.701C22.5302 45.7643 22.3111 45.7951 22.1011 45.7935C21.4344 45.7935 20.8511 45.5535 20.3511 45.0735C19.8511 44.5935 19.6011 44.0001 19.6011 43.2935Z" fill="white"/>
+</svg></div></div>
+                <div class="media-name">
+                    <h1 class="titles" style="font-size: 28px; color: #000;">
+                        <span id="med-name">futures of critical minerals in southern africa</span> </h1>
                 </div>
             </div>
         </div>
+        <div class="footer">
+        <div id="join-us">
+            <p class="text" style="color: white;">Get updates on new publications and upcoming events.</p>
+            <form action="" method="post">
+                <input type="email" id="email" name="email" class="email" style="width: 367px; margin-right: 20px;">
+                <input type="submit" value="subscribe" class="CTA-blue">
+            </form>
+        </div>
+        <ul id="main-layout">
+            <li>
+                <div id="logo-layout">
+                    <img src="GEAR_white_logo.png" height="142px" width="350px">
+                    <p class="text" style="color: white; font-size: 20px;">GEAR Hub is an initiative devoted to intellectual and public engagement activities on various aspects of Africa’s engagement with the world. We focus on knowledge production and timely analysis of global and regional dynamics, developments, and events that impact Africa.</p>
+                </div>
+            </li>
+            <li>
+                <div id="quick-link">
+                    <h1 class="titles" style="color: white; font-size: 40px; align-self: auto;">quick links</h1>
+                    <hr style="width: 150px;">    
+                    <div class="link-butt ">
+                        <a href="index.html">home</a>
+                    </div>
+                    <div class="link-butt ">
+                        <a href="publications.html">publications</a>
+                    </div>
+                    <div class="link-butt ">
+                        <a href="events.html">events</a>
+                    </div>
+                    <div class="link-butt ">
+                        <a href="media.html">media</a>
+                    </div>
+                    <div class="link-butt ">
+                        <a href="experts.html">our experts</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div id="quick-link">
+                    <h1 class="titles" style="color: white; font-size: 40px; align-self: auto;">contact us</h1>
+                    <hr style="width: 150px;">
+                    <p class="text" style="color: white;">admin@gearhub.com</p>
+                    <p class="text" style="color: white;">+254 (0) 712345678</p>
+                    <p class="text" style="color: white;">+254 (0) 712345678</p>
+                </div>
+                </div>
+
         
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>

@@ -764,7 +764,8 @@ align-items: center;
 }
 #ab-event {
     display: flex;
-    flex-direction: column;
+flex-direction: column;
+
     gap: 20px;
     max-width: 600px;
     min-width: 500px;
@@ -904,4 +905,81 @@ align-items: center;
 aspect-ratio: 1/1;
 background-color: var(--links);
 z-index: 2;
+  }
+
+  #expert-bg {
+    height: 400px;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(books.jpg) lightgray 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #search-experts {
+    padding-top: 50px;
+  }
+
+  #alphabet {
+    padding: 0px 115px 30px 115px;
+    display: flex;
+ justify-content: space-between;
+ justify-content: center;
+  }
+  .letters {
+     font-family: "Cinzel";
+    font-size: 24px;
+    color: var(--main);
+    height: 44px;
+    width: 44px;
+    margin: 0px;
+    font-weight: 300;
+    text-align: center;
+    align-content: center;
+    border-right: 1px solid var(--main);
+  }
+  .letters:hover {
+    color: var(--links);
+    cursor: pointer;
+  }
+
+  #expert-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 115px 100px 115px;
+  }
+
+  .letter-section {
+    display: flex;
+    width: -moz-available;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .actual-experts {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .expert {
+    display: flex;
+    background-color: white;
+    column-count: 1;
+    padding: 5px;
+    gap:20px;
+    height: 180px;
+  }
+
+  .profile-pic {
+    width: 150px;
+height: 150px;
+flex-shrink: 0;
+aspect-ratio: 1/1;
+    border-radius: 184px;
+    align-self: center;
+  }
+
+  .exp-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
   }

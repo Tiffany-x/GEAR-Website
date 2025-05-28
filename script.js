@@ -9,3 +9,12 @@ function filterFunction() {
     div = document.getElementById("region-dropdown");
 
 }
+
+fetch('article.txt')
+  .then(response => response.text())
+  .then(text => {
+    // Replace newlines with <br> and display
+    const formattedText = text.replace(/\n/g, '<br>');
+    document.getElementById('content').innerHTML = formattedText;
+  })
+  .catch(error => console.error('Error loading file:', error));

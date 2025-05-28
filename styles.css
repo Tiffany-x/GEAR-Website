@@ -1,19 +1,19 @@
 @font-face {
     font-family: "Cinzel";
     src: 
-        url("Cinzel-Regular.otf");
+        url("assets/fonts/Cinzel-Regular.otf");
 }
 
 @font-face {
     font-family: "Lora";
     src:
-        url("Lora-Regular.ttf");
+        url("assets/fonts/Lora-Regular.ttf");
 }
 
 @font-face {
     font-family: "Quattrocento";
     src:
-        url("Quattrocento-Regular.ttf");
+        url("assets/fonts/Quattrocento-Regular.ttf");
 }
 
 p {
@@ -181,7 +181,7 @@ border: 2px solid var(--links);
 #hero {
     height: 620px;
     width: auto;
-    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 44.71%), linear-gradient(270deg, rgba(255, 255, 255, 0.30) 0%, #FFF 77.4%), url("background.jpg") lightgray 50% / cover no-repeat;
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 44.71%), linear-gradient(270deg, rgba(255, 255, 255, 0.30) 0%, #FFF 77.4%), url("assets/images/background.jpg") lightgray 50% / cover no-repeat;
     display: flex;
     flex-direction: column;
 }
@@ -303,7 +303,7 @@ hr {
     padding-top: 20px;
     padding-bottom: 20px;
 width: inherit;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, rgba(18, 54, 121, 0.50) 100%), url("books.jpg") lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, rgba(18, 54, 121, 0.50) 100%), url("assets/images/books.jpg") lightgray 50% / cover no-repeat;
     align-content: center;
     display: flex;
     justify-content: center;
@@ -510,7 +510,7 @@ div {
 
 #pub-bg {
     height: 350px;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(books.jpg) lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(assets/images/books.jpg) lightgray 50% / cover no-repeat;
     display: flex;
     flex-direction: column;
 }
@@ -743,14 +743,14 @@ align-items: center;
 .pub-img {
     width: 250px;
     height: 135px;
-    background: url(story.jpg) lightgray 50% / cover no-repeat;
+    background: url(assets/images/story.jpg) lightgray 50% / cover no-repeat;
 }
 
 
 
 #event-bg {
     height: 630px;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(event.jpg) lightgray 50% / cover no-repeat;    display: flex;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(assets/images/event.jpg) lightgray 50% / cover no-repeat;    display: flex;
     flex-direction: column;
 }
 
@@ -831,7 +831,7 @@ align-items: center;
 
   #media-bg {
     height: 400px;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(media.jpg) lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(assets/images/media.jpg) lightgray 50% / cover no-repeat;
     display: flex;
     flex-direction: column;
   }
@@ -892,7 +892,7 @@ align-items: center;
     display: grid;
     width: inherit;
     height: 250px;
-    background: url(vid-thumbnail.jpg);
+    background: url(assets/images/vid-thumbnail.jpg);
     align-content: end;
   }
   .med-type {
@@ -910,7 +910,7 @@ z-index: 2;
 
   #expert-bg {
     height: 400px;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(books.jpg) lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(assets/images/books.jpg) lightgray 50% / cover no-repeat;
     display: flex;
     flex-direction: column;
   }
@@ -995,7 +995,7 @@ aspect-ratio: 1/1;
 
   #publication-bg {
     height: 630px;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(story-img.jpeg) lightgray 50% / cover no-repeat;    display: flex;
+    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(assets/images/story-img.jpeg) lightgray 50% / cover no-repeat;    display: flex;
     flex-direction: column;
   }
 

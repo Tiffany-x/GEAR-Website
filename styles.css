@@ -756,11 +756,10 @@ align-items: center;
 
 #about-events {
     align-items: center;
-    margin: 0px 115px 0px 115px;
     justify-content: space-between;
     display: flex;
     height: inherit;
-gap: 20px;
+    gap: 20px;
 }
 #ab-event {
     display: flex;
@@ -1002,7 +1001,6 @@ aspect-ratio: 1/1;
   .navigate {
     display: flex;
     gap: 10px;
-    margin:0px 115px 0 115px;
   }
 
   .nav-text {
@@ -1026,9 +1024,11 @@ aspect-ratio: 1/1;
 }
   #pub-hero {
     display: flex;
+    margin: 0px 115px 0px 115px;
     flex-direction: column;
     justify-content: center;
-    height: inherit;
+    flex: 1;
+
   }
 
   #pub-content {
@@ -1100,7 +1100,7 @@ aspect-ratio: 1/1;
     justify-content: space-evenly;
   }
   .PSA {
-    margin: 50px 0px 0px 0;
+    margin: 40px 0px 0px 0;
  color: rgba(0, 0, 0, 0.70);
 font-family: "Quattrocento";
 font-size: 16px;
@@ -1125,3 +1125,48 @@ font-size: 16px;
     display: flex;
     gap: 20px;
 }
+
+#media-content {
+    margin: 80px 115px 20px 115px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+
+#vid-container {
+    width: 70vw;
+    align-self: center;
+}
+iframe {
+    width: 100%; /* Fills container */
+    aspect-ratio: 16/9; /* YouTube's native aspect ratio */
+    border: none; /* Removes default iframe border */
+  }
+
+  #about-media {
+    width: calc(100vw * .551);
+  }
+
+  #media-date {
+    font-family: "Cinzel";
+    font-size: 28px;
+    color: var(--main);
+    height: min-content;
+    margin: 0px;
+    text-align: end;
+    width: auto;
+  }
+
+  .event-prompt {
+    color: black;
+    font-family: "Quattrocento";
+    font-size: 28px;
+    margin:0px;
+  }
+
+  .quattro-text {
+        color: black;
+    font-family: "Quattrocento";
+    font-size: 20px;
+    margin:0px;
+  }

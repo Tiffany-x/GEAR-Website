@@ -452,10 +452,7 @@ align-content: center;
     grid-template-columns: 2fr 1fr 1fr;
     height: auto;
     width: auto;
-    padding-top: 50px;
-    padding-bottom: 80px;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding: 50px 115px 50px 115px;
     gap: 20px;
     margin: 0px;
     background-color: var(--main);
@@ -1169,4 +1166,16 @@ iframe {
     font-family: "Quattrocento";
     font-size: 20px;
     margin:0px;
+  }
+
+  .credits {
+    background-color: var(--main);
+        color: white;
+    font-family: "Lora";
+    font-size: 20px;
+    margin:0px;
+    width: auto;
+    text-align: center;
+    height: 30px;
+    align-items: center;
   }

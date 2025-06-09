@@ -227,7 +227,7 @@ border: 2px solid var(--links);
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 
     padding-top: 50px;
     padding-bottom: 50px;
@@ -286,7 +286,14 @@ hr {
     font-size: 22px;
     height: min-content;
     color: var(--main);
+    display: inline-flex;
 }
+.index-publication {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
 .rec-img {
     height: 224px;
     width: 370px; 
@@ -492,6 +499,7 @@ align-content: center;
     font-family: "Cinzel";
     font-size: 22px;
 }
+
 
 body {
 
@@ -766,11 +774,7 @@ flex-direction: column;
     max-width: 600px;
     min-width: 500px;
 }
-.contents {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
+
 .events-area {
     display: flex;
     flex-direction: column;

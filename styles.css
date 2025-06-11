@@ -995,7 +995,6 @@ aspect-ratio: 1/1;
 
   #publication-bg {
     height: 630px;
-    background: linear-gradient(0deg, rgba(18, 54, 121, 0.50) 0%, #123679 100%), url(assets/images/story-img.jpeg) lightgray 50% / cover no-repeat;    display: flex;
     flex-direction: column;
   }
 
@@ -1018,18 +1017,12 @@ aspect-ratio: 1/1;
     background-position: 0% 100%; /* Animate to left */
   }
 
-#to-author:hover #pub-title {
-        cursor: pointer;
-    background-size: 100% 2px; /* Full width on hover */
-    background-position: 0% 100%; /* Animate to left */
-}
+
   #pub-hero {
     display: flex;
-    margin: 0px 115px 0px 115px;
+    margin: 50px 115px 0px 115px;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
-
   }
 
   #pub-content {
@@ -1070,13 +1063,13 @@ aspect-ratio: 1/1;
     width: fit-content;
   }
 
-  .topic-list {
+  #topic-list {
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
   }
 
-  .similars {
+  #similars {
     background-color: var(--main);
     display: flex;
     flex-direction: column;
@@ -1183,3 +1176,22 @@ iframe {
     height: 30px;
     align-items: center;
   }
+
+#auth-name {
+    
+    /* Underline animation setup */
+    background-image: linear-gradient(var(--links), var(--links));
+    background-size: 0% 2px; /* Width:0, Height:2px */
+    background-repeat: no-repeat;
+    background-position: 100% 100%; /* Start from right */
+    
+    /* Animation */
+    transition: background-size 0.8s ease;
+  }
+  
+#to-author:hover #auth-name {
+    cursor: pointer;
+    background-size: 100% 2px; /* Full width on hover */
+    background-position: 0% 100%; /* Animate to left */
+  }
+

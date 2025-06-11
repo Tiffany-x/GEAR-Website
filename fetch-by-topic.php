@@ -12,24 +12,38 @@ require_once 'connect.php';
 $conn->set_charset("utf8mb4");  // Critical for Unicode
 
 try {
+    $articleTopic = (string)$_GET['topic'];  // Force integer to prevent SQL injection
+
     // Increase GROUP_CONCAT length limit
     $conn->query("SET SESSION group_concat_max_len = 1000000;");
     
-    $sql = "SELECT a.articleID,
+    $sql = "SELECT 
+    a.articleID,
     a.title,
     a.description,
     a.dateof_pub,
     CONVERT(a.image_path USING utf8mb4) AS image_path,
     GROUP_CONCAT(DISTINCT CONCAT(au.first_name, ' ', au.last_name) SEPARATOR '|') AS authorNames,
-    GROUP_CONCAT(DISTINCT au.authorID SEPARATOR ',') AS authorIDs
-    FROM article a
-    LEFT JOIN article_authors aa ON a.articleID = aa.articleID
-    LEFT JOIN author au ON aa.authorID = au.authorID
-    GROUP BY a.articleID
-    ORDER BY a.dateof_pub DESC
-    LIMIT 3";
+    GROUP_CONCAT(DISTINCT au.authorID SEPARATOR ',') AS authorIDs,
+    GROUP_CONCAT(DISTINCT ac.topic_name SEPARATOR '|') AS articleTags
+FROM article a
+LEFT JOIN article_authors aa ON a.articleID = aa.articleID
+LEFT JOIN author au ON aa.authorID = au.authorID
+LEFT JOIN entity_tags ab ON a.articleID = ab.entityID
+LEFT JOIN topic ac ON ab.tagID = ac.topicID
+WHERE ac.topic_name = ?
+GROUP BY a.articleID
+ORDER BY a.dateof_pub DESC
+LIMIT 2;";
+
+    $stmt = $conn->prepare($sql);
+    if (!$stmt) {
+        throw new Exception("Prepare failed: " . $conn->error);
+    }
     
-    $result = $conn->query($sql);
+    $stmt->bind_param("s", $articleTopic);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     
     if (!$result) {

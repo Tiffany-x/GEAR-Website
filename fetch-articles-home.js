@@ -29,14 +29,7 @@ function fetchArticles() {
                                     <span id="pub-title">${articleData.title}</span>
                                 </h2>
                                 <p class="text">${articleData.description}</p>
-                                <ul class="rec-author" style="display: inline-flex;">
-                                    <li><p>Author:</p></li>
-                                    <li>
-                                        <p style="color: var(--links); text-decoration: underline;" href=about-expert.html?id=${articleData.authors.id}">
-                                            ${articleData.authors.map(a => a.name).join(', ')}
-                                        </p>
-                                    </li>
-                                </ul>
+                                <p class= "rec-author">${articleData.date}</p>
                             </div></li>
                         </a>
                     `;

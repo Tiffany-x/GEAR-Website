@@ -73,9 +73,9 @@ return response.text().then(text => {
 
                 document.getElementById('description').textContent = artData.description;
                 document.getElementById('auth-name').textContent = data.data.authors[0].name;
-                document.getElementById('to-author').href = `about-author.html?id=${data.data.authors[0].id}`;
+                document.getElementById('to-author').href = `about-expert.html?id=${data.data.authors[0].id}`;
                 document.getElementById('artDate').textContent = artData.date;
-                document.getElementById('topic').textContent = artData.topics.join(', ');
+                document.getElementById('topic').textContent = artData.topics[0];
 
 
                 artData.topics.forEach(topic =>{

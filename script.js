@@ -10,7 +10,6 @@ function filterFunction() {
 
 }
 
-
 fetch('Lora-Chase-bio.txt')
   .then(response => response.text())
   .then(text => {

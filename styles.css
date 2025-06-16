@@ -739,16 +739,14 @@ align-items: center;
 .pub-dets {
     display: flex;  
     flex-direction: column;
-    padding: 5px 157px 5px 60px;
+    padding: 5px 60px 5px 60px;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
 }
 
 .pub-img {
     width: 250px;
     height: 135px;
-    background: url(assets/images/story.jpg) lightgray 50% / cover no-repeat;
 }
 
 

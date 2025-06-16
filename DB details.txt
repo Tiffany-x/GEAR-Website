@@ -1,4 +1,0 @@
-hostname: localhost
-database: nyxsolut_GEAR
-username: nyxsolut_GEAR
-password: FH5WY7xKVpJxeLJrKMJN

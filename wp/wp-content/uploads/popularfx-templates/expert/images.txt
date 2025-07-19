@@ -1,0 +1,36 @@
+Images
+
+about-bg1 => https://unsplash.com/photos/faEfWCdOKIg
+about-img1.jpg => https://www.pexels.com/photo/people-sitting-on-chairs-beside-their-desks-in-an-office-1170412/
+about-img2.jpg => https://www.pexels.com/photo/six-woman-standing-and-siting-inside-the-room-1181622/
+blog1-img1.jpg => https://unsplash.com/photos/6awfTPLGaCE
+blog1-img2.jpg => https://unsplash.com/photos/QBpZGqEMsKg
+blog1-img3.jpg => https://unsplash.com/photos/-uHVRvDr7pg
+blog2-img1.jpg => https://unsplash.com/photos/05gac-Qn0k4
+blog2-img2.jpg => https://unsplash.com/photos/YI_9SivVt_s
+blog2-img3.jpg => https://unsplash.com/photos/VWcPlbHglYc
+blog3-img1.jpg => https://unsplash.com/photos/vGgn0xLdy8s
+blog3-img2.jpg => https://unsplash.com/photos/IgUR1iX0mqM
+blog3-img3.jpg => https://unsplash.com/photos/7lryofJ0H9s
+blog4-img1.jpg => https://unsplash.com/photos/46bom4lObsA
+blog4-img2.jpg => https://unsplash.com/photos/7RWBSYA9Rro
+blog4-img3.jpg => https://unsplash.com/photos/aWf7mjwwJJo
+blog5-img1.jpg => https://unsplash.com/photos/wawEfYdpkag
+blog5-img2.jpg => https://unsplash.com/photos/buYlndcNnjM
+blog5-img3.jpg => https://unsplash.com/photos/tMI2_-r5Nfo
+counter.jpg => https://unsplash.com/photos/5QgIuuBxKwM
+home-bg-1.jpg => https://unsplash.com/photos/g1Kr4Ozfoac
+home-header.jpg => https://www.pexels.com/photo/man-raising-right-hand-288477/
+home-img1.jpg => https://unsplash.com/photos/O2o1hzDA7iE
+home-img2.jpg => https://unsplash.com/photos/rFUFqjEKzfY
+services-img1.jpg => https://unsplash.com/photos/5aiRb5f464A
+team-img1.jpg => https://www.pexels.com/photo/woman-in-black-coat-browsing-on-laptop-computer-1181293/
+team-img2.jpg => https://www.pexels.com/photo/man-in-blue-suit-jacket-and-blue-dress-pants-3460134/
+team-img3.jpg => https://www.pexels.com/photo/woman-in-red-blazer-wearing-black-framed-eyeglasses-4063695/
+testi-img1.jpg => https://www.pexels.com/photo/woman-holding-a-laptop-4347368/
+testi-img2.jpg => https://www.pexels.com/photo/man-in-gray-suit-3526923/
+testi-img3.jpg => https://www.pexels.com/photo/men-s-wearing-black-suit-jacket-and-pants-937481/
+top-all-bg.jpg => https://www.pexels.com/photo/photography-of-city-during-dusk-867092/
+vision-img1.jpg => https://unsplash.com/photos/MYbhN8KaaEc
+vision-img2.jpg => https://unsplash.com/photos/Oalh2MojUuk
+vision-img3.jpg => https://unsplash.com/photos/gMsnXqILjp4

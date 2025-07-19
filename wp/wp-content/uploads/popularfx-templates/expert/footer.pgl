@@ -1,0 +1,46 @@
+<!-- sp:pagelayer/pl_post_props {"post_title":"Footer","post_name":"footer","post_status":"publish","featured_image":"","post_excerpt":"","post_password":"","post_comments":"","post_pingbacks":"","post_date":"2021-04-20 10:28:08","post_sticky":"","pagelayer-id":"kvj4420"} /-->
+<!-- sp:pagelayer/pl_row {"stretch":"auto","col_gap":"10","width_content":"auto","row_height":"default","overlay_hover_delay":"400","row_shape_top_color":"#227bc3","row_shape_top_width":"100","row_shape_top_height":"100","row_shape_bottom_color":"#ff8f00ff","row_shape_bottom_width":"173","row_shape_bottom_height":"100","ele_bg_type":"color","ele_bg_color":"#000000ff","row_shape_position":"bottom","row_shape_type_bottom":"mountains","ele_padding":"50px,0px,80px,0px","pagelayer-id":"2hu5960"} -->
+<!-- sp:pagelayer/pl_col {"widget_space":"15","overlay_hover_delay":"400","pagelayer-id":"0mt3468"} -->
+<!-- sp:pagelayer/pl_inner_row {"stretch":"auto","col_gap":"10","width_content":"auto","row_height":"default","overlay_hover_delay":"400","row_shape_top_color":"#227bc3","row_shape_top_width":"100","row_shape_top_height":"100","row_shape_bottom_color":"#e44993","row_shape_bottom_width":"100","row_shape_bottom_height":"100","pagelayer-id":"zww2819"} -->
+<!-- sp:pagelayer/pl_inner_col {"widget_space":"15","overlay_hover_delay":"400","col":"4","ele_padding":"5px,5px,5px,5px","pagelayer-id":"zkc993"} -->
+<!-- sp:pagelayer/pl_wp_title {"site_title_state":"normal","text-align":"left","title_color":"#ff8f00ff","site_title_style":",40,,,,,Solid,1.1,Capitalize,,","title_padding":"0,0,0,0","pagelayer-id":"zom5044"} /-->
+<!-- sp:pagelayer/pl_heading {"text":"\u003cp\u003eLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\u003c\/p\u003e","heading_state":"normal","align":"left","color":"#ffffffff","heading_typo":",,,,,,Solid,,,,","pagelayer-id":"tkr7731"} --><p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p><!-- /sp:pagelayer/pl_heading -->
+<!-- /sp:pagelayer/pl_inner_col -->
+<!-- sp:pagelayer/pl_inner_col {"widget_space":"15","overlay_hover_delay":"400","col":"2","pagelayer-id":"2ec4755"} -->
+<!-- sp:pagelayer/pl_heading {"text":"\u003ch4\u003eQuick Links\u003c\/h4\u003e","heading_state":"hover","color":"#ff8f00ff","align":"left","pagelayer-id":"pyk1474"} --><h4>Quick Links</h4><!-- /sp:pagelayer/pl_heading -->
+<!-- sp:pagelayer/pl_wp_menu {"nav_list":"948","align":"left","layout":"vertical","pointer":"","m_animation":"slide","list_style":"none","submenu_ind":"caret-down","menu_bg_color_hover":"","menu_bg_color_active":"","horizontal_padding":"10","vertical_padding":"6","submenu_align":"left","submenu_color":"#ffffff","submenu_bg_color":"#0986c0","submenu_horizontal_padding":"10","submenu_vertical_padding":"10","submenu_left_margin":"10","menu_toggle_align":"center","menu_toggle_bg_color":"#0986c050","menu_toggle_size":"30","slide_style":"pagelayer-wp_menu-right","menu_width":"30","menu_items_width":"100","menu_posy":"8","menu_bg":"color","close_size":"25","close_padding":"8","close_color":"#ffffff68","close_bg_color":"#00000036","close_hover_delay":"600","close_color_hover":"#ffffff","close_bg_color_hover":"#000000","submenu_position":"left","menu_items_bg":"#ffffff","menu_typo":"Poppins,16,,,,None,Solid,,,,","menu_color":"#ffffffff","menu_color_hover":"#ff8f00ff","menu_color_active":"#ff8f00ff","pagelayer-id":"4wk3742"} /-->
+<!-- /sp:pagelayer/pl_inner_col -->
+<!-- sp:pagelayer/pl_inner_col {"widget_space":"15","overlay_hover_delay":"400","col":"3","pagelayer-id":"bwc9357"} -->
+<!-- sp:pagelayer/pl_heading {"text":"\u003ch4\u003eServices\u003c\/h4\u003e","heading_state":"normal","color":"#ff8f00ff","align":"left","pagelayer-id":"zgz9881"} --><h4>Services</h4><!-- /sp:pagelayer/pl_heading -->
+<!-- sp:pagelayer/pl_list {"list_type":"none","spacing":"10","list_text_state":"normal","item_indent":"0","list_icon_state":"normal","icon_color":"#0986c0","icon_border_type":"","icon_border_color":"#cbd2dc78","icon_border_width":"3","list_color":"#ffffffff","list_typo":"Poppins,16,,,,,Solid,2.5,,,","pagelayer-id":"fcu8503"} -->
+<!-- sp:pagelayer/pl_list_item {"item":"Business Planning","show_icon":"true","icon":"","pagelayer-id":"kym959"} -->Business Planning<!-- /sp:pagelayer/pl_list_item -->
+<!-- sp:pagelayer/pl_list_item {"item":"Feasibility Study","show_icon":"true","icon":"","pagelayer-id":"bpw1562"} -->Feasibility Study<!-- /sp:pagelayer/pl_list_item -->
+<!-- sp:pagelayer/pl_list_item {"item":"Startup Funding","show_icon":"true","icon":"","pagelayer-id":"d6f5595"} -->Startup Funding<!-- /sp:pagelayer/pl_list_item -->
+<!-- sp:pagelayer/pl_list_item {"item":"Investor Presentation","show_icon":"true","icon":"","pagelayer-id":"npl1247"} -->Investor Presentation<!-- /sp:pagelayer/pl_list_item -->
+<!-- /sp:pagelayer/pl_list -->
+<!-- /sp:pagelayer/pl_inner_col -->
+<!-- sp:pagelayer/pl_inner_col {"widget_space":"15","overlay_hover_delay":"400","col":"3","pagelayer-id":"k7u701"} -->
+<!-- sp:pagelayer/pl_heading {"text":"\u003ch4\u003eGet In Touch\u003c\/h4\u003e","heading_state":"normal","color":"#ff8f00ff","align":"left","pagelayer-id":"tb76813"} --><h4>Get In Touch</h4><!-- /sp:pagelayer/pl_heading -->
+<!-- sp:pagelayer/pl_address {"icon":"","color":"#ffffffff","typography":"Poppins,18,,,,,Solid,2.5,,,","align":"flex-start","pagelayer-id":"dle5358"} /-->
+<!-- sp:pagelayer/pl_phone {"icon":"","color":"#ffffffff","typography":"Poppins,18,,,,,Solid,2.5,,,","align":"flex-start","pagelayer-id":"0dd8815"} /-->
+<!-- sp:pagelayer/pl_email {"icon":"","color":"#ffffffff","typography":"Poppins,18,,,,,Solid,2.5,,,","align":"flex-start","pagelayer-id":"gea184"} /-->
+<!-- /sp:pagelayer/pl_inner_col -->
+<!-- /sp:pagelayer/pl_inner_row -->
+<!-- sp:pagelayer/pl_inner_row {"stretch":"auto","col_gap":"10","width_content":"auto","row_height":"default","overlay_hover_delay":"400","row_shape_top_color":"#227bc3","row_shape_top_width":"100","row_shape_top_height":"100","row_shape_bottom_color":"#e44993","row_shape_bottom_width":"100","row_shape_bottom_height":"100","pagelayer-id":"srr7659"} -->
+<!-- sp:pagelayer/pl_inner_col {"widget_space":"15","overlay_hover_delay":"400","pagelayer-id":"ird5290"} -->
+<!-- sp:pagelayer/pl_social_grp {"align":"center","group_layout":"pagelayer-btn-grp-horizontal","icon_spacing":"3","icon_size":"18","color_scheme":"","icon_color":"#000000ff","social_hover_delay":"400","icon_color_hover":"#ffffff","bg_shape":"pagelayer-social-shape-circle","bg_size":"14","icon_bg_color":"#ff8f00ff","icon_bg_color_hover":"#212121ff","social_hover":"","pagelayer-id":"gnw3167"} -->
+<!-- sp:pagelayer/pl_social {"icon":"fab fa-facebook-f","social_url":"https:\/\/facebook.com\/sitepad","pagelayer-id":"q9n3858"} /-->
+<!-- sp:pagelayer/pl_social {"icon":"fab fa-instagram","social_url":"https:\/\/instagram.com\/sitepad","pagelayer-id":"2ts8462"} /-->
+<!-- sp:pagelayer/pl_social {"icon":"fab fa-twitter","social_url":"https:\/\/twitter.com\/sitepad","pagelayer-id":"oob4796"} /-->
+<!-- sp:pagelayer/pl_social {"icon":"fab fa-google-plus-g","social_url":"https:\/\/plus.google.com\/sitepad","pagelayer-id":"uvx3031"} /-->
+<!-- sp:pagelayer/pl_social {"icon":"fab fa-linkedin-in","social_url":"https:\/\/linkedin.com\/sitepad","pagelayer-id":"vtn1104"} /-->
+<!-- /sp:pagelayer/pl_social_grp -->
+<!-- /sp:pagelayer/pl_inner_col -->
+<!-- /sp:pagelayer/pl_inner_row -->
+<!-- sp:pagelayer/pl_inner_row {"stretch":"auto","col_gap":"10","width_content":"auto","row_height":"default","overlay_hover_delay":"400","row_shape_top_color":"#227bc3","row_shape_top_width":"100","row_shape_top_height":"100","row_shape_bottom_color":"#e44993","row_shape_bottom_width":"100","row_shape_bottom_height":"100","pagelayer-id":"iml290"} -->
+<!-- sp:pagelayer/pl_inner_col {"widget_space":"15","overlay_hover_delay":"400","col":"6","pagelayer-id":"xpq6254"} -->
+<!-- sp:pagelayer/pl_copyright {"copyright_text":"\u00a9 2021 Expert Theme . All right Reserved","align":"center","color":"#ffffffff","typography":",20,,,,None,Solid,,,,","pagelayer-id":"act8847"} /-->
+<!-- /sp:pagelayer/pl_inner_col -->
+<!-- /sp:pagelayer/pl_inner_row -->
+<!-- /sp:pagelayer/pl_col -->
+<!-- /sp:pagelayer/pl_row -->

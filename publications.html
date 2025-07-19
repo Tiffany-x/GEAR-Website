@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GEAR Publications</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A leading nexus for research, knowledge production and engagement on Africa's place in the world.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="fetch-articles-page.js"></script>
+
+    </head>
+    <body style="background-color: var(--off-bg);">
+        <div id="pub-bg">
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <div class="logo">
+                            <img src="assets/images/GEAR_white_logo.png" href="index.html" height="89" width="216"/>
+                        </div>    
+                    </li>
+                    <li>
+                    <ul class = "menus">
+                        <li>
+                            <ul class="nav-bar">
+                                <li>
+                                    <div class="nav-butt-blue">
+                                    <a href="index.html">home</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html" style="color: var(--links);">publications</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="events.html">events</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="media.html">media</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="experts.html">our experts</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="CTA" id="CTA">
+                                        <a>join us!</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="nav-bar">
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">culture & arts</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">stem</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">technology</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">diplomacy & politics</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">economics & trade</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="nav-butt-blue">
+                                        <a href="publications.html">environment</a>
+                                    </div>
+                                </li>                        
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                </ul>        
+                </nav>
+
+                <div id="pub-hero">
+                    <div id="about-events">
+                    <h1 class="titles" style="color: white;">publications</h1>
+                        <div class="vr" style="width: 4px; height: 200px;"></div>
+                    <div id="ab-event">
+
+                        <p class="text" style="color: white; font-size: 22px; font-family: 'Quattrocentro';">
+                            We produce a wide range of publications including policy briefings, special reports, opinion and analysis and conference papers. 
+                        </p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        <div id="search-experts">
+            <div id="search-area">
+                <form style="width: 100%; display: flex; height: inherit; gap: 28px;">
+                    <div style="position: relative;  width: -moz-available; display: flex;">
+                        <input type="text" id="search-text" name="text" placeholder="Search GEAR Hub publications">
+                        <svg width="17" id="clear-search" style="align-self: center; cursor: pointer; position: absolute;" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="-1" x2="19.5775" y2="-1" transform="matrix(0.754188 0.656659 -0.628793 0.777572 0.832275 1.57214)" stroke="#F27457" stroke-width="2"/>
+                            <line y1="-1" x2="19.5775" y2="-1" transform="matrix(-0.754188 0.656659 0.628793 0.777572 16.168 1.57214)" stroke="#F27457" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div style="position: relative; height: 100%;">
+                        <button id="start-filter" class="filter-box" type="button">
+                            <h1 class="filter-texts">topic</h1>
+                            <svg width="31" height="15" viewBox="0 0 31 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.755957 0.654621 -0.630864 0.775893 0.603271 2)" stroke="#F27457" stroke-width="2"/>
+                                <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.755957 0.654621 0.630864 0.775893 30.624 2)" stroke="#F27457" stroke-width="2"/>
+                            </svg>
+                        </button>
+                        <div id="dropdown" class="dropdown">
+                            <input type="text" autocomplete="off" id="topicSearch" placeholder="Search topics" name="topic-search">
+                            <div id="dropdown-list"></div>
+                            <div class="hidden-topics" id="hiddenTopics">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" id="search-articles" value="search" class="CTA-orange" style="align-self: center; height: inherit; width: 280px;">
+                </form>
+            </div>
+            
+            <div id="selectedTags" class="selectedTags" style="background-color: var(--off-bg);">
+                    <h1 id="selected-no" class="filter-texts">0</h1><h1 class="filter-texts" style="padding-left: 5px;">selected:</h1>
+                    <div class="box" id="box" style="background-color: var(--off-bg);">
+                    </div>
+            </div>
+        </div>
+        <p class="text" style="font-size: 32px; margin: 0px 120px 20px 120px;"> 
+            Showing
+            <span id="value1"></span> - <span id="value2"></span> of <span id="total"></span> results
+        </p>
+        <div id="publications">
+        </div>
+        <div class="pagination">
+            <a id="first-page"><div class="paging">
+                <svg>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.654621 0.755957 -0.775893 -0.630864 27.4736 10)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.654621 -0.755957 -0.775893 0.630864 27.4736 40.0208)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.654621 0.755957 -0.775893 -0.630864 34.4736 10)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.654621 -0.755957 -0.775893 0.630864 34.4736 40.0208)" stroke="#F27457" stroke-width="2"/>
+                </svg>
+            </div></a>
+            <a id="previous-page"><div class="paging">
+                <svg>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.654621 0.755957 -0.775893 -0.630864 32.4736 10)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(-0.654621 -0.755957 -0.775893 0.630864 32.4736 40.0208)" stroke="#F27457" stroke-width="2"/>
+                </svg>
+            </div></a>
+            <p id="current-page">1</p>
+            <a id="next-page"><div class="paging">
+                <svg>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.654621 -0.755957 0.775893 0.630864 18.7622 40)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.654621 0.755957 0.775893 -0.630864 18.7622 9.97925)" stroke="#F27457" stroke-width="2"/>
+                </svg>
+            </div></a>
+            <a id="last-page"><div class="paging">
+                <svg>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.654621 -0.755957 0.775893 0.630864 23.7622 40)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.654621 0.755957 0.775893 -0.630864 23.7622 9.97925)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.654621 -0.755957 0.775893 0.630864 16.7622 40)" stroke="#F27457" stroke-width="2"/>
+                    <line y1="-1" x2="19.6385" y2="-1" transform="matrix(0.654621 0.755957 0.775893 -0.630864 16.7622 9.97925)" stroke="#F27457" stroke-width="2"/>
+                </svg>
+            </div></a>
+
+        </div>
+        
+        <div class="footer">
+            <div id="join-us">
+                <p class="text" style="color: white;">Get updates on new publications and upcoming events.</p>
+                <form action="" method="post">
+                    <input type="email" id="email" name="email" class="email" style="width: 367px; margin-right: 20px;">
+                    <input type="submit" value="subscribe" class="CTA-blue">
+                </form>
+            </div>
+            <ul id="main-layout">
+                <li>
+                    <div id="logo-layout">
+                        <img src="assets/images/GEAR_white_logo.png" height="142px" width="350px">
+                        <p class="text" style="color: white; font-size: 20px;">GEAR Hub is an initiative devoted to intellectual and public engagement activities on various aspects of Africa’s engagement with the world. We focus on knowledge production and timely analysis of global and regional dynamics, developments, and events that impact Africa.</p>
+                    </div>
+                </li>
+                <li>
+                    <div id="quick-link">
+                        <h1 class="titles" style="color: white; font-size: 40px; align-self: auto;">quick links</h1>
+                        <hr style="width: 150px;">    
+                        <div class="link-butt ">
+                            <a href="index.html">home</a>
+                        </div>
+                        <div class="link-butt ">
+                            <a href="publications.html">publications</a>
+                        </div>
+                        <div class="link-butt ">
+                            <a href="events.html">events</a>
+                        </div>
+                        <div class="link-butt ">
+                            <a href="media.html">media</a>
+                        </div>
+                        <div class="link-butt ">
+                            <a href="experts.html">our experts</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="quick-link">
+                        <h1 class="titles" style="color: white; font-size: 40px; align-self: auto;">contact us</h1>
+                        <hr style="width: 150px;">
+                        <p class="text" style="color: white;">admin@gearhub.com</p>
+                        <p class="text" style="color: white;">+254 (0) 712345678</p>
+                        <p class="text" style="color: white;">+254 (0) 712345678</p>
+                    </div>
+                    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
